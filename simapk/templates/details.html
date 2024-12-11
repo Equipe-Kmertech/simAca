@@ -1,0 +1,111 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block body %}
+    <style>
+        .course-description {
+            margin: 20px 0;
+        }
+        .btn-enroll {
+            background: #06BBCC;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .btn-enroll:hover {
+            background: #06BBCC;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: #06BBCC;
+        }
+    </style>
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Details</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Details</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Course Details Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="course-description">
+                    <h2>Présentation du cours</h2>
+                    <p>Ce cours en ligne couvre tout ce dont vous avez besoin pour devenir un développeur Python accompli. Des bases du langage aux frameworks avancés comme Django et Flask, ce programme a été conçu pour vous préparer aux exigences du marché.</p>
+                    <p>Avec des exercices pratiques et des projets réels, vous pourrez renforcer vos compétences et construire un portefeuille impressionnant.</p>
+                </div>
+
+                <h3>Ce que vous apprendrez :</h3>
+                <ul>
+                    <li>Les bases du langage Python</li>
+                    <li>Programmation orientée objet</li>
+                    <li>Création d'applications web avec Django et Flask</li>
+                    <li>Analyse de données avec Pandas et NumPy</li>
+                    <li>Automatisation de tâches avec Python</li>
+                </ul>
+
+                <h3>Instructeur :</h3>
+                <p><strong>Jean Dupont</strong>, développeur senior avec plus de 10 ans d'expérience dans le domaine.</p>
+
+                <button class="btn-enroll">S'inscrire maintenant</button>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Course Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Informations Clés</h5>
+                        <ul>
+                            <li><strong>Durée :</strong> 10 semaines</li>
+                            <li><strong>Prix :</strong> 200€</li>
+                            <li><strong>Langue :</strong> Français</li>
+                            <li><strong>Mode :</strong> En ligne</li>
+                        </ul>
+                        <button class="btn-enroll w-100">Commencer maintenant</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Features -->
+        <div class="row mt-5">
+            <h3>Avantages du cours</h3>
+            <div class="col-md-4 text-center">
+                <span class="feature-icon">&#128187;</span>
+                <h5>Accès à vie</h5>
+                <p>Apprenez à votre propre rythme avec un accès illimité au contenu du cours.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <span class="feature-icon">&#128640;</span>
+                <h5>Certificat reconnu</h5>
+                <p>Obtenez un certificat attestant de vos compétences pour booster votre carrière.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <span class="feature-icon">&#128101;</span>
+                <h5>Soutien individuel</h5>
+                <p>Bénéficiez de l'aide personnalisée de nos instructeurs tout au long de votre apprentissage.</p>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
